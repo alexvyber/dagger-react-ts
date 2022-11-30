@@ -19,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:dagger": "node --loader ts-node/esm ./build.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@dagger.io/dagger": "^0.1.1",
+    "ts-node": "^10.9.1"
+  },
+  "type": "module"
 }
